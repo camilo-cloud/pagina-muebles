@@ -1,0 +1,26 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fuente y cuerpo base */
+  body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #fff;
+    color: #3d3d3d; 
+    line-height: 1.6;
+  }
+  
+  /* Enlaces */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Imágenes responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
