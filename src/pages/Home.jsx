@@ -1,5 +1,11 @@
+import Hero from "../components/Hero"
+
 export default function Home() {
     return (
-        <img src="/src/assets/images/sala.jpg" />
+        <>
+            <Hero />
+            <p>Home</p>
+        </>
+
     )
 }

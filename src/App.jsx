@@ -6,6 +6,7 @@ import Sillas from './pages/Sillas';
 import Mesas from './pages/Mesas';
 import Accesorios from './pages/Accesorios';
 import Empresa from './components/Empresa';
+import Hero from './components/Hero';
 import "./App.css";
 
 function App() {
