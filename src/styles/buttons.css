@@ -1,0 +1,16 @@
+.btns{
+    padding: 1rem 1.5rem;
+    margin-left: 10px;
+    background: transparent;
+    border: 2px solid #b6a05b;
+    color: #b6a05b;
+    font-weight: 700;
+    font-size: 1.065rem;
+    transition: color .3s, border-color .3s, background-color .3s;
+    line-height: 1;
+    cursor: pointer;
+}
+.btns:hover{
+    background-color: rgba(182,160,91,1);
+    color: #fff;
+}

@@ -1,0 +1,100 @@
+.container-home-midsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f3ef;
+    height: 400px;
+}
+.left-card{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 380px;
+    margin-left: 20px;
+    height: 100%;
+}
+.left-card-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.right-card{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding: 20px;
+    width: 63%;
+    gap: 20px;
+    height: 100%;
+}
+.right-card-img{
+    width: 50%;
+    height: 100%;
+    flex: 2;
+}
+.right-card-text-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex:1;
+    padding: 5px 20px;
+}
+.right-card-title{
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.diamond-divider-wrapper {
+  position: relative;
+  width: 240px; /* total width of line + diamond */
+  height: 20px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamond-divider-wrapper::before,
+.diamond-divider-wrapper::after {
+  content: "";
+  height: 2px;
+  background-color: #b6a05b;
+  flex: 1;
+}
+
+.diamond-shape {
+  width: 20px;
+  height: 20px;
+  background-color: white; /* fondo interno del rombo */
+  border: 2px solid #b6a05b;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+.product-cards-section{
+    display: flex;
+    padding: 20px;
+    justify-content:flex-start;
+    gap:25px;
+    flex-wrap: wrap;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

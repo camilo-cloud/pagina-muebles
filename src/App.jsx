@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Sillas from './pages/Sillas';
 import Mesas from './pages/Mesas';
 import Accesorios from './pages/Accesorios';
+import Sofas from './pages/Sofas';
 import Empresa from './components/Empresa';
 import Hero from './components/Hero';
 import "./App.css";
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/sillas" element={<Sillas />} />
                 <Route path="/mesas" element={<Mesas />} />
                 <Route path="/accesorios" element={<Accesorios />} />
+                <Route path="/sofas" element={<Sofas />} />
                 <Route path="/empresa" element={<Empresa />} />
             </Routes>
             <Footer />

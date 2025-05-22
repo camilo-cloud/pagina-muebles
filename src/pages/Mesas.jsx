@@ -1,5 +1,12 @@
+import Hero from "../components/Hero"
+
+
 export default function Mesas() {
     return (
-        <p>Mesas</p>
+        <>
+            <Hero />
+            <p>Mesas</p>
+        </>
+
     )
 }

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import "./Header.css"
+import '../styles/buttons.css'
 
 function Header() {
     return (
@@ -21,7 +22,7 @@ function Header() {
                         <li><Link to="/sillas">Sillas</Link></li>
                         <li><Link to="/accesorios">Accesorios</Link></li>
                     </ul>
-                    <button className='btn-locales'>DONDE COMPRAR</button>
+                    <button className='btns'>DONDE COMPRAR</button>
                 </nav>
             </header>
         </>
