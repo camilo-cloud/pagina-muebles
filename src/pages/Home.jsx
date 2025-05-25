@@ -4,6 +4,8 @@ import '../styles/buttons.css';
 import './Home.css';
 import ProductCard from "./ProductCard";
 import useFadeInOnScroll from "../components/useFadeInOnScroll";
+import AboutOurMaterials from "../components/AboutOurMaterials";
+
 
 //imágenes
 import sofaImage from '../assets/images/sofa.jpg';
@@ -49,6 +51,7 @@ export default function Home() {
 
     const [midRef, midVisible] = useFadeInOnScroll();
     const [cardsRef, cardsVisible] = useFadeInOnScroll();
+    const [aboutRef, aboutVisible] = useFadeInOnScroll();
 
     return (
         <>
@@ -87,6 +90,11 @@ export default function Home() {
                         />
                     </Link>
                 ))}
+            </div>
+            <div ref={aboutRef}
+                className={`product-cards-section fade-in-section ${aboutVisible ? 'visible' : ''}`}>
+                <AboutOurMaterials />
+
             </div>
 
         </>

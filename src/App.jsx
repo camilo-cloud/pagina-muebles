@@ -7,7 +7,6 @@ import Mesas from './pages/Mesas';
 import Accesorios from './pages/Accesorios';
 import Sofas from './pages/Sofas';
 import Empresa from './components/Empresa';
-import Hero from './components/Hero';
 import "./App.css";
 
 function App() {

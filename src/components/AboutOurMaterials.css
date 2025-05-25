@@ -1,0 +1,80 @@
+.container-about-our-materials{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.about-our-materials-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 20px;;
+    width: 65%;;
+}
+
+.about-our-materials-header h2 {
+    text-align: center;
+    font-size: 2.3rem; /* aumenta verticalmente */
+    line-height: 1.4;
+    word-break: break-word; /* por si alguna palabra larga se desborda */
+    max-width: 100%; /* asegura que no crezca horizontalmente */
+    margin-top: 50px;
+}
+
+
+.about-our-materials-header button {
+
+    margin: 30px 0;
+}
+
+.about-our-materials-cards {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.card-about-our-materials {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px 20px 20px 20px;
+    gap: 30px;
+    box-sizing: border-box;
+
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 61,35 95,35 67,57 78,90 50,70 22,90 33,57 5,35 39,35' fill='none' stroke='%23b6a05b' stroke-width='7'/></svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 20px;    
+}
+
+
+.card-text {
+    text-align: center;
+    margin-top: 10px;
+
+}
+.card-about-our-materials:last-child .card-text {
+    margin-top: 50px; /* o el valor que lo alinee con las otras */
+}
+/* b6a05b */
