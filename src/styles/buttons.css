@@ -14,3 +14,22 @@
     background-color: rgba(182,160,91,1);
     color: #fff;
 }
+  .btns-black {
+  background-color: #3d3d3d;
+  color: white;
+  border: 2px solid transparent;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.btns-black:hover {
+  background-color: transparent;
+  color: #3d3d3d;
+  border: 2px solid #3d3d3d;
+}

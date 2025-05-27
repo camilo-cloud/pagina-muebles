@@ -1,0 +1,70 @@
+.about-our-style {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 0 20px; 
+    padding-top: 40px;
+}
+.about-our-style h2 {
+    text-align: center;
+    font-size: 5.2rem; 
+    line-height: 1.4;
+    letter-spacing: 3px;
+    font-family: DM Serif Display, serif;
+    word-break: break-word; 
+    max-width: 100%; 
+    margin: 50px 0;
+    padding: 30px 30px 100px 30px;
+    position: relative;
+}
+.about-our-style h2::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 2px;
+    height: 90px;
+    background-color: #b6a05b;
+}
+
+.style-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8% 20px 40px 20px;
+    border: 2px solid #b6a05b;
+}
+
+.style-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 40%;
+}
+.style-description p{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.style-description button {
+    width: 60%;
+    margin-bottom: 75px;
+}
+
+.style-image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+.style-image img {
+    align-items: center;
+    object-fit: cover;
+    max-height: 400px;
+    width: 80%;
+}
+

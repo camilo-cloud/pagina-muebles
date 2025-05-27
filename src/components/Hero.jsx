@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Hero.css";
+import "../styles/buttons.css";
 
 const slides = [
     {
@@ -49,7 +50,7 @@ export default function Hero() {
                 </h2>
                 <h3 className="hero-description">{slides[index].description}</h3>
                 <div className="botones">
-                    <button className="btn-compra-aqui">Compra aqui</button>
+                    <button className="btns-black">Compra aqui</button>
                     <div className="hero-controls">
                         {slides.map((_, i) => (
                             <button

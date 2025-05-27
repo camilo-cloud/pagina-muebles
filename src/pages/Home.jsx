@@ -5,6 +5,7 @@ import './Home.css';
 import ProductCard from "./ProductCard";
 import useFadeInOnScroll from "../components/useFadeInOnScroll";
 import AboutOurMaterials from "../components/AboutOurMaterials";
+import AboutOurStyleSection from "../components/AboutOurStyleSection";
 
 
 //imágenes
@@ -13,6 +14,7 @@ import sillaMadera from '../assets/images/silla-madera.png';
 import sofaGrande from '../assets/images/sofa-grande.png';
 import mesa from '../assets/images/mesa.png';
 import repisa from '../assets/images/repisa.png';
+
 
 
 export default function Home() {
@@ -96,7 +98,11 @@ export default function Home() {
                 <AboutOurMaterials />
 
             </div>
+            <div className="section-separator">
+                <span className="diamond-shape-large"></span>
+            </div>
 
+            <AboutOurStyleSection />
         </>
 
     )
