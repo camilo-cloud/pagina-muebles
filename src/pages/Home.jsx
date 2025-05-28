@@ -6,6 +6,7 @@ import ProductCard from "./ProductCard";
 import useFadeInOnScroll from "../components/useFadeInOnScroll";
 import AboutOurMaterials from "../components/AboutOurMaterials";
 import AboutOurStyleSection from "../components/AboutOurStyleSection";
+import VisitUs from "../components/VisitUs";
 
 
 //imágenes
@@ -58,6 +59,8 @@ export default function Home() {
     return (
         <>
             <Hero />
+
+            {/* Mid Section */}
             <section
                 ref={midRef}
                 className={`container-home-midsection fade-in-section ${midVisible ? 'visible' : ''}`}
@@ -78,6 +81,8 @@ export default function Home() {
 
                 </div>
             </section>
+
+            {/* Product Cards Section */}
             <div
                 ref={cardsRef}
                 className={`product-cards-section fade-in-section ${cardsVisible ? 'visible' : ''}`}
@@ -93,16 +98,21 @@ export default function Home() {
                     </Link>
                 ))}
             </div>
+
+            {/* About Our Materials Section */}
             <div ref={aboutRef}
-                className={`product-cards-section fade-in-section ${aboutVisible ? 'visible' : ''}`}>
+                className={` fade-in-section ${aboutVisible ? 'visible' : ''}`}>
                 <AboutOurMaterials />
 
             </div>
+
+            {/* Section Separator */}
             <div className="section-separator">
                 <span className="diamond-shape-large"></span>
             </div>
 
             <AboutOurStyleSection />
+            <VisitUs />
         </>
 
     )

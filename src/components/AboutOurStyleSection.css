@@ -1,8 +1,9 @@
 .about-our-style {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: white;
-    margin: 0 20px; 
+    margin: 0; 
     padding-top: 40px;
 }
 .about-our-style h2 {
@@ -32,8 +33,9 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 8% 20px 40px 20px;
+    padding: 60px 20px 40px 20px;
     border: 2px solid #b6a05b;
+    width: 98%;
 }
 
 .style-description {

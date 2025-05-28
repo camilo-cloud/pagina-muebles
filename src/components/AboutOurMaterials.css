@@ -1,10 +1,9 @@
 .container-about-our-materials{
     background-color: #fff;
-    padding: 20px;;
+    padding: 20px;
     display: flex;
     gap: 5px;
     margin-top: 20px;
-    /* margin-bottom: 20px; */
     justify-content: space-evenly;
 }
 
