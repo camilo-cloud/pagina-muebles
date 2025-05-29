@@ -7,6 +7,7 @@ import useFadeInOnScroll from "../components/useFadeInOnScroll";
 import AboutOurMaterials from "../components/AboutOurMaterials";
 import AboutOurStyleSection from "../components/AboutOurStyleSection";
 import VisitUs from "../components/VisitUs";
+import ContactSection from "../components/ContactSection";
 
 
 //imágenes
@@ -113,6 +114,7 @@ export default function Home() {
 
             <AboutOurStyleSection />
             <VisitUs />
+            <ContactSection />
         </>
 
     )

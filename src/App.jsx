@@ -7,6 +7,7 @@ import Mesas from './pages/Mesas';
 import Accesorios from './pages/Accesorios';
 import Sofas from './pages/Sofas';
 import Empresa from './components/Empresa';
+import Contacto from './pages/Contacto';
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/accesorios" element={<Accesorios />} />
                 <Route path="/sofas" element={<Sofas />} />
                 <Route path="/empresa" element={<Empresa />} />
+                <Route path="/contacto" element={<Contacto />} />
             </Routes>
             <Footer />
         </>
