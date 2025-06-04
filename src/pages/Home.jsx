@@ -10,6 +10,7 @@ import VisitUs from "../components/VisitUs";
 import ContactSection from "../components/ContactSection";
 
 
+
 //imágenes
 import sofaImage from '../assets/images/sofa.jpg';
 import sillaMadera from '../assets/images/silla-madera.png';
