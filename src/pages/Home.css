@@ -124,3 +124,20 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .container-home-midsection{
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    height: auto;
+  }
+  .right-card {
+    display: none;
+  }
+  .left-card {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 30px 10px;
+  }
+
+}

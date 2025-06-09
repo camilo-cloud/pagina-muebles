@@ -36,3 +36,20 @@
   transform: scale(1.08);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px 2px;
+  }
+
+  .product-card-image-wrapper {
+    height: 250px;
+  }
+
+  .product-card-title {
+    font-size: 1.5rem;
+  } 
+}

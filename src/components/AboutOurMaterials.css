@@ -77,3 +77,58 @@
     margin-top: 50px; /* o el valor que lo alinee con las otras */
 }
 /* b6a05b */
+
+@media (max-width: 768px) {
+  .container-about-our-materials {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .about-our-materials-header {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about-our-materials-header h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+
+  .about-our-materials-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-about-our-materials {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    border: 2px solid #b6a05b;
+
+ }
+
+
+.card-title {
+    padding: 10px 0;
+}
+
+
+.card-text {
+    margin: 0;
+
+}
+.card-about-our-materials:last-child{
+    margin-bottom: 40px;
+}
+ .card-about-our-materials:last-child .card-text {
+    margin-top: 0px;
+    
+}
+}
