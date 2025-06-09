@@ -1,71 +1,127 @@
+/* Bar superior */
 .bar {
-    background: #f4f3ef;
-    padding: 0.7rem 0;
-    display: flex;
-    justify-content: end;
+  background: #f4f3ef;
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: end;
 }
-.bar a{
-    padding-right: 20px;
-    margin: 0;
-    color: rgb(122, 117, 117);
+.bar a {
+  padding-right: 20px;
+  margin: 0;
+  color: rgb(122, 117, 117);
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 20px;
-    background-color: #fff;
+
+/* Header principal */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
 }
-.contenedor-titulo{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    cursor: pointer;
+
+/* Logo y título */
+.title-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
 }
-.titulo{
-    display: flex;
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.title > h2 {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+.title > h3 {
+  margin: 0;
+  margin-top: -9px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.logo {
+  width: 50px;
+  height: 60px;
+  background-color: #fff;
+}
+
+/* Menú horizontal por defecto */
+.navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.navbar-list a {
+  border-bottom: 2px solid transparent;
+  padding: 2px 4px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: border-bottom-color 0.3s ease;
+}
+.navbar-list a:hover {
+  border-bottom-color: #8B4513;
+}
+
+/* Botón hamburguesa (oculto en escritorio) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
+    align-items: flex-start;
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .title-container.small {
+    transition: transform 0.3s ease-in-out; 
+    display: none;
 }
-.titulo > h2{
-    margin-bottom: 0;
-    font-size: 1.6rem;
-}
-.titulo > h3{
+
+  .title-container {
+    transition: transform 0.3s ease-in-out;
+  }
+   .navbar .btns {
+    width: 50%;
+    font-size: 0.75rem;
+    padding: 10px 20px;
     margin: 0;
-    margin-top: -9px;
-    font-size: 0.95rem;
-    font-weight: 700;
+  }
 }
-.logo{
-    width: 50px;
-    height: 60px;
-    background-color: #fff;
-}
-.navegador{
-    display: flex;
-    gap: 30px;
-    padding-right: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.navegador-ul{
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
-.navegador a {
-    border-bottom: 2px solid transparent;
-    padding: 2px 4px;
-    text-decoration: none;
-    font-size: 1.3rem;
-    transition: border-bottom-color 0.3s ease;
-}
-
-.navegador a:hover {
-    border-bottom-color: #8B4513;
-}
-
-

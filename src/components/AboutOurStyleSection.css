@@ -70,3 +70,43 @@
     width: 80%;
 }
 
+@media (max-width: 768px) {
+  .style-container {
+    flex-direction: column;
+    padding: 30px 15px;
+    align-items: center;
+  }
+
+  .style-description,
+  .style-image {
+    width: 100%;
+  }
+
+  .style-description {
+    padding: 10px;
+  }
+
+  .style-description p {
+    font-size: 1.4rem;
+  }
+
+  .style-description button {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .style-image {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .style-image img {
+    width: 100%;
+    max-height: none;
+  }
+
+  .about-our-style h2 {
+    font-size: 3.2rem;
+    padding: 20px;
+  }
+}
