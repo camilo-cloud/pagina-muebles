@@ -1,0 +1,79 @@
+.card-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 380px;
+    border: 2px solid rgb(230, 227, 227);
+    padding: 20px 10px;
+    /* Add relative positioning for absolute positioning of .card-info */
+    position: relative;
+    /* Hide any overflowing content */
+    overflow: hidden;
+    /* Change cursor to indicate interactivity on hover */
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.card-container img {
+    padding: 10px;
+    width: 100%;
+    /* Smooth transition for the image opacity */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.initial-title { /* Styles for the initially visible title */
+    padding: 10px;
+    font-size: 2rem;
+    /* Smooth transition for the initial title opacity */
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.card-info {
+    /* Position the info absolutely within the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Initially hidden */
+    opacity: 0;
+    /* Smooth transition for the info opacity */
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.card-container:hover img {
+    /* Hide the image on hover */
+    opacity: 0;
+}
+
+.card-container:hover .initial-title {
+    opacity: 0;
+}
+
+
+.card-container:hover .card-info {
+    /* Show the info on hover */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Styles for the title and button inside .card-info */
+.card-info h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.card-info button {
+margin-bottom: 30px;
+}

@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h2{
+    padding: 40px;
+    font-size: 3rem;
+}
+.container-chairs{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
