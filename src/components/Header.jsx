@@ -43,10 +43,13 @@ function Header() {
                 <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
                     <ul className="navbar-list">
                         <li>
+                            <Link to="/sillas">Sillas</Link>
+                        </li>
+                        <li>
                             <Link to="/mesas">Mesas</Link>
                         </li>
                         <li>
-                            <Link to="/sillas">Sillas</Link>
+                            <Link to="/sofas">Sofás</Link>
                         </li>
                         <li>
                             <Link to="/accesorios">Accesorios</Link>
