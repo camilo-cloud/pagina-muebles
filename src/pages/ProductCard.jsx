@@ -1,4 +1,4 @@
-import "./productCard.css";
+import "./ProductCard.css";
 
 export default function ProductCard({ title, image, color1, color2 }) {
     return (

@@ -1,4 +1,4 @@
-import "./visitUs.css";
+import "./VisitUs.css";
 import "../styles/buttons.css";
 import backgroundImage from "../assets/images/referencia.png";
 
