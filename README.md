@@ -65,7 +65,8 @@ Este sitio está en desarrollo como parte de un proceso de aprendizaje con el ob
 
 ## 📷 Vista previa
 
-_Agregue una captura de pantalla aquí si lo desea._
+![Project Cover Image](src/assets/images/portada.PNG)
+
 
 ---
 
