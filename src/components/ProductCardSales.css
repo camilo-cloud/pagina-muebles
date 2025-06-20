@@ -7,7 +7,7 @@
     margin: 10px;
     width: 380px;
     border: 2px solid rgb(230, 227, 227);
-    padding: 20px 10px;
+    padding: 30px 10px;
     /* Add relative positioning for absolute positioning of .card-info */
     position: relative;
     /* Hide any overflowing content */
@@ -22,11 +22,12 @@
     width: 100%;
     /* Smooth transition for the image opacity */
     transition: opacity 0.3s ease-in-out;
+    /* background-color: #fff; */
 }
 
 .initial-title { /* Styles for the initially visible title */
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     /* Smooth transition for the initial title opacity */
     transition: opacity 0.3s ease-in-out;
 }
