@@ -2,7 +2,7 @@ import SectionBanner from "../components/SectionBanner";
 import productCards from "../data/productData";
 import sillas from "../data/sillaData";
 import ProductCardSales from "../components/ProductCardSales";
-import "./Sillas.css"
+import "../styles/ProductCardStyles.css"
 
 export default function Sillas() {
     
@@ -18,7 +18,7 @@ export default function Sillas() {
             />
             <section className="container">
                 <h2>La mejor selección de Sillas</h2>
-                <div className="container-chairs">
+                <div className="container-product-cards">
                     {sillas.map(silla => (
                         <ProductCardSales 
                             key={silla.name} 
