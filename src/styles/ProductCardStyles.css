@@ -9,7 +9,7 @@
     padding: 40px;
     font-size: 3rem;
 }
-.container-chairs{
+.container-product-cards{
     display: flex;
     justify-content: space-between;
     gap:20px;

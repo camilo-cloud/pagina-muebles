@@ -1,3 +1,5 @@
+/* SectionBanner.css */
+
 .section-banner {
     position: relative;
     display: flex;
@@ -19,10 +21,15 @@
     max-width: 60%;
 }
 
-/* CHANGED: image shift now controlled by CSS variable from props */
 .section-banner img {
     width: 80%;
     object-fit: contain;
-    transform: scaleX(-1) translateX(var(--image-offset));
+    transform: translateX(var(--image-offset));
     z-index: 1;
+    transition: transform 0.3s ease;
 }
+.section-banner img.flip-horizontal {
+    /* Combines horizontal flip and translation */
+    transform: scaleX(-1) translateX(var(--image-offset));
+}
+
