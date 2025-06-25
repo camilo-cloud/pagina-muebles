@@ -15,6 +15,7 @@ export default function Mesas() {
             color1={productCards[1].color1}
             color2={productCards[1].color2}
             imageOffset={-400} 
+            flipImage={true}
             />
             <section className="container">
                 <h2>La mejor selección de Mesas</h2>

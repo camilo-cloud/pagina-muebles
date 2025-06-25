@@ -14,6 +14,7 @@ export default function Sillas() {
             image={productCards[0].image}
             color1={productCards[0].color1}
             color2={productCards[0].color2}
+            flipImage={true}
             imageOffset={-300} // ADDED: specific offset for sillas image
             />
             <section className="container">

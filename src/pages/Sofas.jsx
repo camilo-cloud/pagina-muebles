@@ -15,6 +15,7 @@ export default function Sofas() {
             color1={productCards[2].color1}
             color2={productCards[2].color2}
             imageOffset={-400} 
+            flipImage={true}
             />
             <section className="container">
                 <h2>La mejor selección de Sofás</h2>
