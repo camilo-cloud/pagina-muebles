@@ -1,75 +1,74 @@
-# Página de Muebles Artesanales
+# Handmade Furniture Page
 
-Sitio web diseñado como proyecto de práctica en **React** para mostrar una tienda de muebles hechos a mano. Incluye navegación, secciones informativas, productos organizados por categoría (sillas, mesas, sofás, accesorios) y diseño responsive.
-
+Website designed as a practice project in **React** to display a handmade furniture store. It includes navigation, informational sections, products organized by category (chairs, tables, sofas, accessories), and a responsive design.
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Technologies Used
 
-- React
+- React.js
 - React Router DOM
 - HTML5 / CSS3
 - JavaScript (ES6)
-- Vite (como bundler)
-- Imágenes y estilos personalizados
+- Vite (as bundler)
+- Custom images and styles
 
 ---
 
-## 📁 Estructura principal
-
+## 📁 Main Structure
 ```
 src/
 │
-├── assets/        # Imágenes del sitio
-├── components/    # Componentes reutilizables (Header, Footer, Hero, etc.)
-├── pages/         # Páginas principales (Home, Sillas, Mesas, etc.)
-├── styles/        # Estilos globales y botones
-├── data/          # Archivos compartidos con datos de productos
-└── App.jsx        # Archivo principal de rutas
+├── assets/..........# Site images
+├── components/......# Reusable components (Header, Footer, Hero, etc.)
+├── pages/...........# Main pages (Home, Chairs, Tables, etc.)
+├── styles/..........# Global styles and buttons
+├── data/............# Shared product data files
+└── App.jsx..........# Main routes file
+
 ```
 
 ---
 
-## 🚀 Cómo ejecutar localmente
+## 🚀 How to run locally
 
-1. **Clonar el repositorio:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/camilo-cloud/pagina-muebles.git
    ```
 
-2. **Ingresar a la carpeta:**
+2. **Enter the folder**
    ```bash
    cd pagina-muebles
    ```
 
-3. **Instalar las dependencias:**
+3. **Install the dependencies:**
    ```bash
    npm install
    ```
 
-4. **Ejecutar el proyecto:**
+4. **Run the project:**
    ```bash
    npm run dev
    ```
 
-5. **Abrir en el navegador:**  
+5. **Open in the browser:**  
    Visita [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 📌 Estado del proyecto
+## 📌 Project Status
 
-Este sitio está en desarrollo como parte de un proceso de aprendizaje con el objetivo de adquirir experiencia práctica en React y diseño web moderno.
+This site is under development as part of a learning process aimed at gaining hands-on experience with React and modern web design.
 
 ---
 
-## 📷 Vista previa
+## 📷 Preview
 
 ![Project Cover Image](src/assets/images/portada.PNG)
 
 
 ---
 
-## 📄 Licencia
+## 📄 Licence
 
-Este proyecto está libre para uso educativo y personal.
+This project is free to use for educational and personal purposes.

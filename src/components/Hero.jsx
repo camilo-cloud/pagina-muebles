@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 import "../styles/buttons.css";
 
@@ -50,7 +51,7 @@ export default function Hero() {
                 </h2>
                 <h3 className="hero-description">{slides[index].description}</h3>
                 <div className="botones">
-                    <button className="btns-black">Compra aqui</button>
+                    <Link to="/donde-comprar" className="btns-black">Compra aqui</Link>
                     <div className="hero-controls">
                         {slides.map((_, i) => (
                             <button
