@@ -1,13 +1,13 @@
 // Header.jsx
-// ---------------------------------------------------------------------
-// ADDED from line 1 – hook for menu state
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import '../styles/buttons.css';
 
+// IMPORT logo so Vite bundles it
+import chairIcon from '../assets/images/icono-silla-sin-fondo.png';
+
 function Header() {
-    // ADDED from line 7 – state & toggle handler
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => setMenuOpen((prev) => !prev);
 
@@ -20,13 +20,13 @@ function Header() {
             <header className="header">
                 <Link
                     to="/"
-                    className={`title-container ${menuOpen ? 'small' : ''}`} // <-- clase condicional
+                    className={`title-container ${menuOpen ? 'small' : ''}`}
                 >
-
                     <img
                         className="logo"
-                        src="/src/assets/images/icono-silla-sin-fondo.png"
-                        alt="logo"
+                        src={chairIcon}
+                        alt="Ícono de silla - logo de MuebleArte"
+                        loading="lazy"
                     />
                     <div className="title">
                         <h2>MuebleArte</h2>
@@ -34,12 +34,10 @@ function Header() {
                     </div>
                 </Link>
 
-                {/* ADDED from line 26 – hamburger button */}
                 <button className="hamburger" onClick={toggleMenu}>
                     &#9776;
                 </button>
 
-                {/* CHANGED from line 31 – nav gets dynamic class */}
                 <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
                     <ul className="navbar-list">
                         <li>

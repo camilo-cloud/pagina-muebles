@@ -3,19 +3,24 @@ import { Link } from "react-router-dom";
 import "./Hero.css";
 import "../styles/buttons.css";
 
+// IMPORT the images so Vite can bundle them
+import sala from '../assets/images/sala.jpg';
+import sala2 from '../assets/images/sala2.jpg';
+import sala3 from '../assets/images/sala3.jpg';
+
 const slides = [
     {
-        src: "/src/assets/images/sala.jpg",
+        src: sala,
         title: "Orgullosamente producto colombiano",
         description: "NO IMPORTA TU ESTILO, LO TENEMOS.",
     },
     {
-        src: "/src/assets/images/sala2.jpg",
+        src: sala2,
         title: "Muebles con diseño único",
         description: "HECHOS PARA DURAR Y ENCANTAR.",
     },
     {
-        src: "/src/assets/images/sala3.jpg",
+        src: sala3,
         title: "Comodidad y estilo en un solo lugar",
         description: "INSPÍRATE Y RENUEVA TU HOGAR.",
     },
@@ -37,8 +42,9 @@ export default function Hero() {
                 <img
                     key={i}
                     src={slide.src}
-                    alt={`Hero ${i + 1}`}
+                    alt={slide.title} // más descriptivo
                     className={`hero-image ${i === index ? "active" : ""}`}
+                    loading="lazy"
                 />
             ))}
             <div className="hero-overlay">
