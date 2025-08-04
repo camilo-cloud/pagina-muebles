@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/buttons.css"
 import "./AboutOurStyleSection.css"
 import Sofa from "../assets/images/sofa3.jpeg";
@@ -11,7 +12,7 @@ export default function AboutOurStyleSection() {
                     <p>
                         Fusionamos tradición y modernidad en cada pieza, cuidando cada unión y acabado para que tu espacio refleje autenticidad y calidez.
                     </p>
-                    <button className="btns-black">VER CATÁLOGO</button>
+                    <Link to="/catalog" className="btns-black">VER CATÁLOGO</Link>
                 </div>
                 <div className="style-image">
                     <img src={Sofa} alt="Estilos de sofá" />

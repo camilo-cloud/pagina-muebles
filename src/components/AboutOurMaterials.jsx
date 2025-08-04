@@ -1,5 +1,7 @@
 import "./AboutOurMaterials.css";
 import "../styles/buttons.css";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -8,7 +10,7 @@ export default function AboutOurMaterials() {
         <div className="container-about-our-materials">
             <div className="about-our-materials-header">
                 <h2>Materiales Que Cuentan Historias</h2>
-                <button className="btns">NUESTRO CATÁLOGO</button>
+                <Link to="/catalog" className="btns">NUESTRO CATÁLOGO</Link>
             </div>
             <div className="about-our-materials-cards">
                 <div className="card-about-our-materials">

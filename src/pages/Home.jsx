@@ -32,13 +32,13 @@ export default function Home() {
                         <span className="diamond-shape"></span>
                     </div>
                     <h2 className="left-card-title">Hechos a mano en Colombia</h2>
-                    <button className="btns">OBSERVA LA DIFERENCIA</button>
+                    <Link className="btns" to="/catalog">OBSERVA LA DIFERENCIA</Link>
                 </div>
                 <div className="right-card">
                     <img className="right-card-img" src={productCards[2].image} alt="Sofá" />
                     <div className="right-card-text-button">
                         <h2 className="right-card-title">EXPLORA NUESTRA GRAN COLECCIÓN DE MUEBLES</h2>
-                        <button className="btns">VERLOS TODOS</button>
+                        <Link className="btns" to="/catalog">VERLOS TODOS</Link>
                     </div>
                 </div>
             </section>

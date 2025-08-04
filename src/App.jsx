@@ -9,6 +9,7 @@ import Sofas from './pages/Sofas';
 import Empresa from './components/Empresa';
 import Contacto from './pages/Contacto';
 import DondeComprar from './pages/DondeComprar';
+import Catalog from './pages/Catalog';
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/empresa" element={<Empresa />} />
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path="/donde-comprar" element={<DondeComprar />} />
+                <Route path="/catalog" element={<Catalog />} />
             </Routes>
             <Footer />
         </>

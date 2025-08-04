@@ -55,7 +55,7 @@ function Header() {
                             <Link to="/accesorios">Accesorios</Link>
                         </li>
                     </ul>
-                    <button className="btns">DONDE COMPRAR</button>
+                    <Link to="/donde-comprar" className="btns">DONDE COMPRAR</Link> 
                 </nav>
             </header>
         </>
