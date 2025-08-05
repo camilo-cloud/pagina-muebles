@@ -4,9 +4,9 @@ import "./Hero.css";
 import "../styles/buttons.css";
 
 // IMPORT the images so Vite can bundle them
-import sala from '../assets/images/sala.jpg';
-import sala2 from '../assets/images/sala2.jpg';
-import sala3 from '../assets/images/sala3.jpg';
+import sala from '../assets/images/sala.webp';
+import sala2 from '../assets/images/sala2.webp';
+import sala3 from '../assets/images/sala3.webp';
 
 const slides = [
     {
