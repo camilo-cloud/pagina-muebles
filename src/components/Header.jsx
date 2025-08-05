@@ -49,9 +49,9 @@ function Header() {
                         <li>
                             <Link to="/sofas">Sofás</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/accesorios">Accesorios</Link>
-                        </li>
+                        </li> */}
                     </ul>
                     <Link to="/donde-comprar" className="btns">DONDE COMPRAR</Link> 
                 </nav>
