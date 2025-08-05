@@ -1,4 +1,4 @@
-// src/data/productData.js
+
 
 import sillaMadera from "../assets/images/silla-madera.png";
 import mesa from "../assets/images/mesa.png";
