@@ -1,6 +1,9 @@
 import React from 'react';
 import "./DondeComprar.css"; 
 import "../styles/buttons.css";
+import sofa2 from "../assets/images/sofas/sofa2.jpg";
+import localPhoto from "../assets/images/local.PNG";
+
 
 export default function DondeComprar() {
     const phoneNumber = "(123) 456 7890";
@@ -25,7 +28,7 @@ export default function DondeComprar() {
                     <h1>CONOCE NUESTRA SEDE</h1>
                 </div>
                 <div className="banner-image">
-                    <img src="../src/assets/images/sofas/sofa2.jpg" alt="Sofá de Ejemplo" />
+                    <img src={sofa2} alt="Sofá de Ejemplo" />
                 </div>
             </section>
 
@@ -72,7 +75,7 @@ export default function DondeComprar() {
             {/* Photo of the Local and How to Get There */}
             <section className="donde-comprar-local-photo">
                  <div className="local-photo">
-                     <img src="../src/assets/images/local.PNG" alt="Foto de Nuestro Local" /> 
+                     <img src={localPhoto} alt="Foto de Nuestro Local" /> 
                  </div>
                  <div className="get-directions">
                      {/* Button to open Google Maps Directions */}
