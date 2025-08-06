@@ -57,7 +57,7 @@ export default function Hero() {
                 </h2>
                 <h3 className="hero-description">{slides[index].description}</h3>
                 <div className="botones">
-                    <Link to="/donde-comprar" className="btns-black">Compra aqui</Link>
+                    <Link to="/donde-comprar" className="btns-black">Dónde comprar</Link>
                     <div className="hero-controls">
                         {slides.map((_, i) => (
                             <button
