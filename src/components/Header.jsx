@@ -13,10 +13,6 @@ function Header() {
 
     return (
         <>
-            <div className="bar">
-                <Link to="/empresa">Nuestra compañía</Link>
-            </div>
-
             <header className="header">
                 <Link
                     to="/"

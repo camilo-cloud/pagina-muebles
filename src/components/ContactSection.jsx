@@ -28,7 +28,7 @@ export default function ContactSection() {
                         <Link to="/mesas">Mesas</Link>
                         <Link to="/sillas">Sillas</Link>
                         <Link to="/sofas">Sofás</Link>
-                        <Link to="/accesorios">Accesorios</Link>
+                        {/* <Link to="/accesorios">Accesorios</Link> */}
                     </div>
                 </div>
             </div>

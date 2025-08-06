@@ -6,7 +6,6 @@ import Sillas from './pages/Sillas';
 import Mesas from './pages/Mesas';
 import Accesorios from './pages/Accesorios';
 import Sofas from './pages/Sofas';
-import Empresa from './components/Empresa';
 import Contacto from './pages/Contacto';
 import DondeComprar from './pages/DondeComprar';
 import Catalog from './pages/Catalog';
@@ -22,7 +21,6 @@ function App() {
                 <Route path="/mesas" element={<Mesas />} />
                 <Route path="/accesorios" element={<Accesorios />} />
                 <Route path="/sofas" element={<Sofas />} />
-                <Route path="/empresa" element={<Empresa />} />
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path="/donde-comprar" element={<DondeComprar />} />
                 <Route path="/catalog" element={<Catalog />} />
