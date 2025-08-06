@@ -1,15 +1,36 @@
 // Header.jsx
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import '../styles/buttons.css';
-
-// IMPORT logo so Vite bundles it
 import chairIcon from '../assets/images/icono-silla-sin-fondo.png';
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => setMenuOpen((prev) => !prev);
+
+    // References to the nav and hamburger button for detecting outside clicks
+    const navRef = useRef(null);
+    const buttonRef = useRef(null);
+
+    // Effect to close the menu when clicking outside of the nav or hamburger
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (
+                navRef.current &&
+                !navRef.current.contains(event.target) &&
+                buttonRef.current &&
+                !buttonRef.current.contains(event.target)
+            ) {
+                setMenuOpen(false);
+            }
+        }
+
+        document.addEventListener("click", handleClickOutside);
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
 
     return (
         <>
@@ -30,26 +51,26 @@ function Header() {
                     </div>
                 </Link>
 
-                <button className="hamburger" onClick={toggleMenu}>
+                <button ref={buttonRef} className="hamburger" onClick={toggleMenu}>
                     &#9776;
                 </button>
 
-                <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
+                <nav ref={navRef} className={`navbar ${menuOpen ? 'open' : ''}`}>
                     <ul className="navbar-list">
                         <li>
-                            <Link to="/sillas">Sillas</Link>
+                            <Link to="/sillas" onClick={() => setMenuOpen(false)}>Sillas</Link>
                         </li>
                         <li>
-                            <Link to="/mesas">Mesas</Link>
+                            <Link to="/mesas" onClick={() => setMenuOpen(false)}>Mesas</Link>
                         </li>
                         <li>
-                            <Link to="/sofas">Sofás</Link>
+                            <Link to="/sofas" onClick={() => setMenuOpen(false)}>Sofás</Link>
                         </li>
                         {/* <li>
-                            <Link to="/accesorios">Accesorios</Link>
+                            <Link to="/accesorios" onClick={() => setMenuOpen(false)}>Accesorios</Link>
                         </li> */}
                     </ul>
-                    <Link to="/donde-comprar" className="btns">DONDE COMPRAR</Link> 
+                    <Link to="/donde-comprar" className="btns" onClick={() => setMenuOpen(false)}>DONDE COMPRAR</Link> 
                 </nav>
             </header>
         </>
