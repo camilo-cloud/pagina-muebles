@@ -26,14 +26,14 @@ const productCards = [
         color1: "#d1aa55",
         color2: "#c49a41",
         route: "/sofas"
-    },
-    {
-        title: "Accesorios",
-        image: repisa,
-        color1: "#87f7c2",
-        color2: "#53f1a7",
-        route: "/accesorios"
     }
+    // {
+    //     title: "Accesorios",
+    //     image: repisa,
+    //     color1: "#87f7c2",
+    //     color2: "#53f1a7",
+    //     route: "/accesorios"
+    // }
 ];
 
 export default productCards;

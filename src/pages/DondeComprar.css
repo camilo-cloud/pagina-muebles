@@ -1,201 +1,253 @@
-
-
-.donde-comprar-container {
-    width: 100%; 
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Global box-sizing to prevent overflow due to padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+}
+
+/* Main container */
+.donde-comprar-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px; /* Add horizontal padding for mobile */
+}
+
 /* --- Banner Section Styles --- */
 .donde-comprar-banner {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between; 
-    padding: 40px 0;
-    background: linear-gradient(to right, #000000 60%, #ffffff 96%);
-    color: #fff; 
-    margin-bottom: 40px; 
-    flex-wrap: wrap; 
-}
-.banner-content {
-    flex: 1; 
-    padding-right: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  background: linear-gradient(to right, #000000 60%, #ffffff 96%);
+  color: #fff;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
 }
 
+.banner-content {
+  flex: 1;
+  padding-right: 20px;
+}
 
 .banner-content h1 {
-    font-size: 6rem; 
-    margin-bottom: 10px;
-    margin-left: 30px;
-    font-family: "DM Serif Display", serif;
-    letter-spacing: 1.5px;
-    text-align: center;
-}   
+  font-size: 6rem;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
 
 .banner-image {
-    flex-shrink: 0; /* Prevent image from shrinking */
-    width: 60%; 
-    max-width: 500px; 
+  flex-shrink: 0;
+  width: 60%;
+  max-width: 500px;
 }
 
 .banner-image img {
-    display: block;
-    width: 100%; 
-    height: auto;
-    object-fit: contain;
-    margin-right: 10px;
-    /* padding-right: 20px; */
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 10px;
 }
 
 /* --- Info Intro Section --- */
 .donde-comprar-info-intro {
-    text-align: center;
-    margin: 3ch 0;
+  text-align: center;
+  margin: 3ch 0;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 15px;
 }
 
 .donde-comprar-info-intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .donde-comprar-info-intro p {
-    font-size: 1.2rem;
-    color: #555; 
-    margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
 }
-
 
 /* --- Map and Address Section --- */
 .donde-comprar-map-address {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width:900px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 15px;
 }
 
 .google-map-placeholder {
-     width: 100%; 
-     height: 400px; 
-     background-color: #eee;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-bottom: 20px; 
+  width: 100%;
+  height: 400px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .google-map-placeholder a {
-    font-size: 1.5rem;
-    color: #333;
-    text-decoration: none;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
 }
 
 .address-info {
-    text-align: center; 
-    font-size: 1.1rem;
+  text-align: center;
+  font-size: 1.1rem;
 }
-
 
 /* --- Contact Details and Hours Section --- */
 .donde-comprar-contact-hours {
-    display: flex; 
-    width: 100%;
-    justify-content: center; 
-    margin: 40px 20px;
-    padding: 20px;
-    background-color: #f8f8f8; 
-    flex-wrap: wrap; /* Allow wrap on smaller screens */
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 20px 15px;
+  background-color: #f8f8f8;
+  gap: 20px;
 }
-.contact-details{
-    padding-left: 15%;
-    width: 50%;
-}
+
 .contact-details,
 .hours-info {
-    flex: 1; 
-    min-width: 280px; 
+  flex: 1;
+  min-width: 280px;
+  max-width: 100%;
+  text-align: center;
+  padding: 0 10px;
 }
 
 .contact-details p,
 .hours-info p {
-    font-size: 1.1rem;
-    margin-bottom: 10px
-  
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-.contact-link{
-    color: #b6a05b;
-    text-decoration: none;
-    font-weight: 700;
+.contact-link {
+  color: #b6a05b;
+  text-decoration: none;
+  font-weight: 700;
 }
-
 
 /* --- Local Photo Section --- */
 .donde-comprar-local-photo {
-    text-align: center;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 15px;
 }
 
 .local-photo img {
-    max-width: 80%; 
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto; 
-    border: 1px solid #ccc; 
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 1px solid #ccc;
 }
 
 .get-directions button {
-    font-size: 1.2rem;
-    border-radius: 4px;
-    margin: 30px 0;
-   
+  font-size: 1.2rem;
+  border-radius: 4px;
+  margin: 30px 0;
 }
 
+/* --- Tablet Responsive (max-width: 768px) --- */
 @media (max-width: 768px) {
-    .donde-comprar-banner {
-        flex-direction: column; 
-        text-align: center;
-        background: #b6a05b;
-    }
+  .donde-comprar-banner {
+    flex-direction: column;
+    text-align: center;
+    background: #b6a05b;
+    padding: 30px 15px;
+  }
 
-    .banner-content {
-        padding-right: 0;
-        margin-bottom: 20px; 
-    }
-    .banner-content h1 {
-        font-size: 4rem; 
-        margin-bottom: 10px;
-    }
+  .banner-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
 
-    .banner-image {
-        width: 60%; 
+  .banner-content h1 {
+    font-size: 4rem;
+    margin-left: 0;
+  }
+
+  .banner-image {
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .donde-comprar-map-address {
+    padding: 0 15px;
+  }
+
+  .donde-comprar-contact-hours {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* --- Mobile Responsive (max-width: 480px) --- */
+@media (max-width: 480px) {
+    .donde-comprar-container{
+        padding:0px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
-    .contact-details {
-        padding-left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    .hours-info{
-        padding-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-    .donde-comprar-info-intro p{
-        padding: 10px;
-    }
-    .donde-comprar-map-address {
-        width: 100%;
-        padding: 0 20px;
-      }
-    .donde-comprar-contact-hours {
-        flex-direction: column; 
-        align-items: center;
-    }
+  .banner-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .donde-comprar-info-intro h2 {
+    font-size: 2rem;
+  }
+
+  .donde-comprar-info-intro p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .google-map-placeholder {
+    height: 300px;
+    width: 100%;
+  }
+
+  .address-info p {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .contact-details p,
+  .hours-info p {
+    font-size: 1rem;
+  }
+
+  .local-photo img {
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+  }
 }
