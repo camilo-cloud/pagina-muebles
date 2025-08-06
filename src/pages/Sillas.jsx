@@ -18,7 +18,7 @@ export default function Sillas() {
             imageOffset={-300} // ADDED: specific offset for sillas image
             />
             <section className="container">
-                <h2>La mejor selección de Sillas</h2>
+                <h2 className="sillas-title">La mejor selección de Sillas</h2>
                 <div className="container-product-cards">
                     {sillas.map(silla => (
                         <ProductCardSales 

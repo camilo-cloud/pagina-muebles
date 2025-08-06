@@ -33,3 +33,44 @@
     transform: scaleX(-1) translateX(var(--image-offset));
 }
 
+@media (max-width: 768px) {
+    .section-banner {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .section-title {
+      font-size: 2.5rem;
+      position: static;
+      transform: none;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  
+    .section-banner img {
+      width: 100%;
+      transform: translateX(0) !important; /* Override dynamic offset on mobile */
+    }
+  
+    .section-banner img.flip-horizontal {
+      transform: scaleX(-1) translateX(0) !important;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .container h2 {
+      font-size: 2rem;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .container-product-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  

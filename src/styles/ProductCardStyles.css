@@ -9,9 +9,22 @@
     padding: 40px;
     font-size: 3rem;
 }
+
 .container-product-cards{
     display: flex;
     justify-content: space-between;
     gap:20px;
     flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .sillas-title {
+        font-size: 2.2rem;
+        padding: 20px;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #222;
+        letter-spacing: 1px;
+        line-height: 1.7;
+    }
 }
