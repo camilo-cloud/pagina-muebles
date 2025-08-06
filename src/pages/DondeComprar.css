@@ -166,6 +166,10 @@
         padding-right: 0;
         margin-bottom: 20px; 
     }
+    .banner-content h1 {
+        font-size: 4rem; 
+        margin-bottom: 10px;
+    }
 
     .banner-image {
         width: 60%; 
