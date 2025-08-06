@@ -17,6 +17,7 @@ export default function Catalog() {
     color2="#f5f5f5"
     imageOffset={-400}
     flipImage={true}
+    className="catalog-banner"
   />
 
       <section className="container">

@@ -32,7 +32,10 @@
     /* Combines horizontal flip and translation */
     transform: scaleX(-1) translateX(var(--image-offset));
 }
-
+/* Specific override for Catalog page banner */
+.section-banner.catalog-banner .section-title {
+  left: 190px; 
+}
 @media (max-width: 768px) {
     .section-banner {
       flex-direction: column;

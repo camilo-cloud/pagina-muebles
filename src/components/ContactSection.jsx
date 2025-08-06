@@ -20,7 +20,6 @@ export default function ContactSection() {
                 <div className="contact-links">
                     <div className="contact-links-left">
                         <h4>¿QUIÉNES SOMOS?</h4>
-                        <Link to="/empresa">Nuestra Empresa</Link>
                         <Link to="/donde-comprar">Contacto</Link>
                     </div>
                     <div className='contact-links-right'>
