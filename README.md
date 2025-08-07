@@ -1,74 +1,72 @@
-# Handmade Furniture Page
+# 🪑 MuebleArte – Handmade Furniture Store Website
 
-Website designed as a practice project in **React** to display a handmade furniture store. It includes navigation, informational sections, products organized by category (chairs, tables, sofas, accessories), and a responsive design.
+This is a fully responsive React-based website created as a personal project to showcase a fictional handmade furniture store. It demonstrates practical use of React Router, reusable components, modular CSS, and dynamic rendering of product categories.
+
+> 🧑‍💻 Built with a focus on clean code, performance optimization, and responsive design.  
+> 🔗 **Live Demo**: [https://camilo-cloud.github.io/pagina-muebles](https://camilo-cloud.github.io/pagina-muebles)
+
 ---
 
-## 🛠️ Technologies Used
+## 🔧 Technologies Used
 
 - React.js
 - React Router DOM
-- HTML5 / CSS3
+- Vite
 - JavaScript (ES6)
-- Vite (as bundler)
-- Custom images and styles
+- HTML5 / CSS3
 
 ---
 
-## 📁 Main Structure
+## 📁 Project Structure
+
 ```
 src/
-│
-├── assets/..........# Site images
-├── components/......# Reusable components (Header, Footer, Hero, etc.)
-├── pages/...........# Main pages (Home, Chairs, Tables, etc.)
-├── styles/..........# Global styles and buttons
-├── data/............# Shared product data files
-└── App.jsx..........# Main routes file
-
+├── assets/..........# Optimized images
+├── components/......# Reusable UI components
+├── pages/...........# Route views (Home, Chairs, Tables, etc.)
+├── data/............# Product data (JSON/JS)
+├── styles/..........# Global styles
+└── App.jsx..........# Main router
 ```
 
 ---
 
-## 🚀 How to run locally
+## 🚀 Running Locally
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/camilo-cloud/pagina-muebles.git
-   ```
+```bash
+git clone https://github.com/camilo-cloud/pagina-muebles.git
+cd pagina-muebles
+npm install
+npm run dev
+```
 
-2. **Enter the folder**
-   ```bash
-   cd pagina-muebles
-   ```
-
-3. **Install the dependencies:**
-   ```bash
-   npm install
-   ```
-
-4. **Run the project:**
-   ```bash
-   npm run dev
-   ```
-
-5. **Open in the browser:**  
-   Visita [http://localhost:5173](http://localhost:5173)
+Then open your browser at [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 📌 Project Status
+## 🎯 Features
 
-This site is under development as part of a learning process aimed at gaining hands-on experience with React and modern web design.
+- Fully responsive design (mobile-first)
+- Client-side routing with React Router
+- Product categories loaded from data files
+- Custom styles and layout system
+- Image optimizations with WebP
 
 ---
 
 ## 📷 Preview
 
-![Project Cover Image](src/assets/images/portada.PNG)
-
+![Homepage preview](https://raw.githubusercontent.com/camilo-cloud/pagina-muebles/main/src/assets/images/portada.PNG)
 
 ---
 
-## 📄 Licence
+## 📌 Status
 
-This project is free to use for educational and personal purposes.
+✅ Finished – This project was developed as part of a portfolio to demonstrate front-end skills with React and modern web practices.
+
+---
+
+## 👨‍💻 Author
+
+Camilo Cuartas – [LinkedIn](https://www.linkedin.com/in/camilo-cuartas-dev/)  
+If you’re hiring or looking for collaborators, feel free to connect!
